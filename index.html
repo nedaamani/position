@@ -38,17 +38,30 @@
     main>section {
         flex: 1;
     }
+    main a {
+        background-color: #1c3fdb;
+        color: #d3d3d3;
+        border-radius: 5px;
+    }
 
     section a {
         text-decoration: none;
     }
+
     .about {
-        border-radius: 15% solid ;
+        border-radius: 15% solid;
+    }
+    .sales {
+        position: absolute;
+        color: rgb(255, 246, 246);
+        border-radius: 15px ;
+        background-color: #f50c0c;
+        transform: translateX(15%);
     }
 
     img {
         width: 100%;
- 
+
     }
 
 
@@ -58,8 +71,9 @@
         padding: 15px 15px;
         color: #f2f2f2;
 
-
-
+    }
+    div{
+        color: #d3d3d3;
     }
 
     @media(max-width:600px) {
@@ -85,6 +99,7 @@
     </section>
     <main>
         <section class="about">
+            <p class="sales">20% تخفیف</p>
 
             <img src="https://picsum.photos/200/400/?blur" alt="">
             <h2>لب تاب حرفه ای</h2>
@@ -92,14 +107,16 @@
             <span>45,000,000 تومان</span><br>
             <a href="#">خرید محصول</a>
         </section>
-        <section  class="about">
+        <section class="about">
+            <p class="sales">جدید</p>
             <img src="https://picsum.photos/200/400/?blur" alt="">
             <h2>گوشی هوشمند</h2>
             <p>گوشی هوشمند با صفحه نماش با کیفیت وعملکرد سریع</p>
             <span>25و000و000و تومان</span><br>
             <a href="#">خرید محصول</a>
         </section>
-        <section  class="about">
+        <section class="about">
+            <p class="sales">ویژه</p>
             <img src="https://picsum.photos/200/400/?blur" alt="">
             <h2>هدفون بی سیم</h2>
             <p>هدفون بی سیم با کیفیت صدای عالی و باتری قدرتمند</p>
@@ -110,8 +127,9 @@
 
     </main>
     <footer>تمامی حقوق محفوظ است.</footer>
-
-
+    <div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
 
     </section>
 
