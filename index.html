@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Vazirmatn;
+    }
+
+    #header {
+        text-align: center;
+        background-color: #2c2b2b;
+        color: #f2f2f2;
+    }
+
+    #advice {
+        font-size: small;
+        color: #d3d3d3;
+    }
+
+    main {
+        display: flex;
+        padding: 15px;
+        gap: 15px;
+        position: relative;
+
+    }
+
+    main>section {
+        flex: 1;
+    }
+
+    section a {
+        text-decoration: none;
+    }
+    .about {
+        border-radius: 15% solid ;
+    }
+
+    img {
+        width: 100%;
+ 
+    }
+
+
+    footer {
+        background-color: #2c2b2b;
+        text-align: center;
+        padding: 15px 15px;
+        color: #f2f2f2;
+
+
+
+    }
+
+    @media(max-width:600px) {
+        header {
+            flex-direction: column;
+        }
+
+        main {
+            flex-direction: column;
+        }
+
+        footer {
+            flex-direction: column;
+        }
+
+    }
+</style>
+
+<body>
+    <section id="header">
+        <h1>فروشگاه من</h1>
+        <h2 id="advice">بهترین محصولات را با بهترین قیمت انتخاب کنید </h2>
+    </section>
+    <main>
+        <section class="about">
+
+            <img src="https://picsum.photos/200/400/?blur" alt="">
+            <h2>لب تاب حرفه ای</h2>
+            <p>یک لب تاب قدرتمند برای برنامه نویسی ، طراحی وب و کارهای روزمره</p>
+            <span>45,000,000 تومان</span><br>
+            <a href="#">خرید محصول</a>
+        </section>
+        <section  class="about">
+            <img src="https://picsum.photos/200/400/?blur" alt="">
+            <h2>گوشی هوشمند</h2>
+            <p>گوشی هوشمند با صفحه نماش با کیفیت وعملکرد سریع</p>
+            <span>25و000و000و تومان</span><br>
+            <a href="#">خرید محصول</a>
+        </section>
+        <section  class="about">
+            <img src="https://picsum.photos/200/400/?blur" alt="">
+            <h2>هدفون بی سیم</h2>
+            <p>هدفون بی سیم با کیفیت صدای عالی و باتری قدرتمند</p>
+            <span>3و000و000و تومان</span><br>
+            <a href="#">خرید محصول</a>
+        </section>
+
+
+    </main>
+    <footer>تمامی حقوق محفوظ است.</footer>
+
+
+
+    </section>
+
+</body>
+
+</html>
