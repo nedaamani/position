@@ -19,7 +19,7 @@
     }
 
     h1 {
-      padding: 15px 15px;
+        padding: 15px 15px;
     }
 
     #header {
@@ -37,53 +37,61 @@
 
     main {
         display: flex;
-        padding: 15px;
+        padding: 5%;
+        /* max-width: 80%; */
+
+
+    }
+
+    main section.row {
+        display: flex;
+
         gap: 15px;
         position: relative;
-        margin: 30px ;
-
     }
 
     main>section {
         flex: 1;
 
+
     }
-   
+
     main a {
+        width: 100%;
         background-color: #1c3fdb;
         color: #d3d3d3;
         border-radius: 5px;
         text-decoration: none;
-        padding: 5px 100px;
-       transition: background-color 1s;
+        /* padding: 5px 100px; */
+        transition: background-color 1s;
         display: block;
         align-items: center;
         text-align: center;
-        margin: 15px 15px;
+        margin: 15px auto;
 
     }
 
     section>span {
         color: #1ece4a;
-       
+
     }
 
     section>a:hover {
         background-color: #d3d3d3;
-       color: #1c3fdb;
-   
-    
+        color: #1c3fdb;
+
+
     }
 
 
 
-    main section {
+    main>section.row>section {
         border: 1px solid rgb(200, 200, 200);
         border-radius: 15px;
         box-shadow: 5px 5px 10px #333;
-        padding: 15px ;
-        
-  
+        padding: 15px;
+
+
     }
 
     main section p {
@@ -95,16 +103,14 @@
         color: rgb(255, 246, 246);
         border-radius: 100px;
         background-color: #f50c0c;
-        transform: translateX(-5%);
-
-
+        transform: translatex(-2%);
         padding: 5px 5px;
     }
 
     img {
         width: 100%;
         border-radius: 15px;
-     
+
     }
 
 
@@ -119,12 +125,13 @@
     div {
         position: fixed;
         left: 5px;
-        bottom: 230px;
+        bottom: 20px;
         background-color: #1f1e1e;
         width: 35px;
         height: 35px;
         border-radius: 50%;
     }
+
 
     div>span {
         position: absolute;
@@ -139,28 +146,32 @@
 
     }
 
+    .price {
+        padding-right: 15px;
+    }
+
 
     @media(max-width:600px) {
         header {
             flex-direction: column;
         }
 
-        main {
+        main>section.row {
             flex-direction: column;
-          
-            
+            margin: 20px 80px;
 
         }
-        
+
 
         footer {
             flex-direction: column;
         }
-      div {
-       flex-direction: column;
-      }  
-     
-    
+
+        div {
+            flex-direction: column;
+        }
+
+
 
     }
 </style>
@@ -171,31 +182,37 @@
         <h2 id="advice">بهترین محصولات را با بهترین قیمت انتخاب کنید </h2>
     </section>
     <main>
-        <section class="about">
-            <p class="sales">20% تخفیف</p>
+        <section class="row">
+            <section class="about">
+                <p class="sales">20% تخفیف</p>
 
-            <img src="https://picsum.photos/400/200/?random=1" alt="">
-            <h2>لب تاب حرفه ای</h2>
-            <p>یک لب تاب قدرتمند برای برنامه نویسی ، طراحی وب و کارهای روزمره</p>
-            <span>45,000,000 تومان</span><br>
-            <a href="#">خرید محصول</a>
+                <img src="https://picsum.photos/400/200/?random=1" alt="">
+                <h2>لب تاب حرفه ای</h2>
+                <p>یک لب تاب قدرتمند برای برنامه نویسی ، طراحی وب و کارهای روزمره</p>
+                <span class="price">45,000,000</span>
+                <span>تومان</span>
+                <a href="#">خرید محصول</a>
+            </section>
+            <section class="about">
+                <p class="sales">جدید</p>
+                <img src="https://picsum.photos/400/200/?random=2" alt="">
+                <h2>گوشی هوشمند</h2>
+                <p>گوشی هوشمند با صفحه نماش با کیفیت وعملکرد سریع</p>
+                <span class="price">25,000,000</span>
+                <span>تومان</span>
+                <a href="#">خرید محصول</a>
+            </section>
+            <section class="about">
+                <p class="sales">ویژه</p>
+                <img src="https://picsum.photos/400/200/?random=3" alt="">
+                <h2>هدفون بی سیم</h2>
+                <p>هدفون بی سیم با کیفیت صدای عالی و باتری قدرتمند</p>
+                <span class="price">3,500,000</span>
+                <span>تومان</span>
+                <a href="#">خرید محصول</a>
+            </section>
         </section>
-        <section class="about">
-            <p class="sales">جدید</p>
-            <img src="https://picsum.photos/400/200/?random=2" alt="">
-            <h2>گوشی هوشمند</h2>
-            <p>گوشی هوشمند با صفحه نماش با کیفیت وعملکرد سریع</p>
-            <span>25,000,000 تومان</span><br>
-            <a href="#">خرید محصول</a>
-        </section>
-        <section class="about">
-            <p class="sales">ویژه</p>
-            <img src="https://picsum.photos/400/200/?random=3" alt="">
-            <h2>هدفون بی سیم</h2>
-            <p>هدفون بی سیم با کیفیت صدای عالی و باتری قدرتمند</p>
-            <span>3,500,000 تومان</span><br>
-            <a href="#">خرید محصول</a>
-        </section>
+
 
 
     </main>
@@ -204,7 +221,6 @@
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         <span>3</span>
     </div>
-
     </section>
 
 </body>
